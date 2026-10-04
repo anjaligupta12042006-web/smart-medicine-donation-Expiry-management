@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.inventory-container{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.inventory-container h1{
+    margin-bottom:20px;
+    color:#0f766e;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:14px;
+    text-align:left;
+    border-bottom:1px solid #ddd;
+}
+
+th{
+    background:#0f766e;
+    color:white;
+}
+
+.available{
+    color:green;
+    font-weight:bold;
+}
+
+.low{
+    color:orange;
+    font-weight:bold;
+}
+
+.out{
+    color:red;
+    font-weight:bold;
+}
+
+.view-btn{
+    padding:8px 15px;
+    background:#0f766e;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.view-btn:hover{
+    background:#115e59;
+}
+.medicine-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.medicine-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 450px;
+  max-width: 90%;
+}
+
+.medicine-modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.medicine-modal-content p {
+  margin: 10px 0;
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

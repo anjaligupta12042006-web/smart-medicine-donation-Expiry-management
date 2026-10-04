@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.report-container{
+    padding:30px;
+}
+
+.report-container h1{
+    margin-bottom:25px;
+    color:#2563eb;
+}
+
+/* Cards */
+
+.report-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.report-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.report-card h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+/* Chart */
+
+.chart-box{
+    margin-top:35px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.chart-placeholder{
+    margin-top:20px;
+    height:300px;
+    border:2px dashed #2563eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    color:#777;
+}
+
+/* Table */
+
+.activity-table{
+    margin-top:35px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+}
+
+.approved{
+    color:green;
+    font-weight:bold;
+}
+
+.pending{
+    color:orange;
+    font-weight:bold;
+}
+
+.rejected{
+    color:red;
+    font-weight:bold;
+}

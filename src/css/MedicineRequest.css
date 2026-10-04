@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  background: #f4f7fb;
+}
+
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+
+.request-container {
+  width: 90%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.request-container h1 {
+  margin-bottom: 20px;
+  color: #0f766e;
+}
+
+
+/* ===============================
+   TABLE
+================================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+
+th {
+  background: #0f766e;
+  color: white;
+}
+
+
+/* ===============================
+   REQUEST BUTTON
+================================ */
+
+.accept {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.accept:hover {
+  background: #15803d;
+}
+
+
+/* ===============================
+   CANCEL BUTTON
+================================ */
+
+.reject {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.reject:hover {
+  background: #b91c1c;
+}
+
+
+/* ===============================
+   REQUEST FORM
+================================ */
+
+.request-form-box {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f8fafc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+
+.request-form-box h2 {
+  margin-bottom: 20px;
+  color: #0f766e;
+}
+
+
+.request-form-box p {
+  margin-bottom: 12px;
+  color: #333;
+}
+
+
+/* ===============================
+   FORM LABEL
+================================ */
+
+.request-form-box label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+
+/* ===============================
+   QUANTITY INPUT
+================================ */
+
+.request-form-box input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+.request-form-box input:focus {
+  outline: none;
+  border-color: #0f766e;
+}
+
+
+/* ===============================
+   BUTTON CONTAINER
+================================ */
+
+.request-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+/* ===============================
+   DISABLED BUTTON
+================================ */
+
+.accept:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}

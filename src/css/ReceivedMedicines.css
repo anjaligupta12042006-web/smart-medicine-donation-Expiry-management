@@ -1,0 +1,208 @@
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.received-container {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 40px 60px 60px;
+
+  background: linear-gradient(
+    135deg,
+    #d8f8e8,
+    #b9efd4,
+    #d8f8e8
+  );
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.received-header {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.received-header h1 {
+  margin: 0;
+
+  font-size: 34px;
+
+  color: #111827;
+}
+
+.received-header p {
+  margin-top: 8px;
+
+  font-size: 17px;
+
+  color: #6b7280;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.received-message {
+  text-align: center;
+
+  font-size: 18px;
+
+  color: #555;
+}
+
+
+/* =========================================
+   EMPTY MESSAGE
+========================================= */
+
+.received-empty {
+  width: 100%;
+
+  background: white;
+
+  padding: 50px 20px;
+
+  text-align: center;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.received-empty div {
+  font-size: 50px;
+
+  margin-bottom: 10px;
+}
+
+.received-empty h2 {
+  margin: 0;
+
+  color: #087f73;
+}
+
+.received-empty p {
+  color: #777;
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.received-table-wrapper {
+  width: 100%;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+
+  overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.received-table-wrapper table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.received-table-wrapper thead {
+  background: #087f73;
+
+  color: white;
+}
+
+.received-table-wrapper th {
+  padding: 15px;
+
+  text-align: left;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.received-table-wrapper td {
+  padding: 15px;
+
+  color: #555;
+
+  font-size: 15px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.received-table-wrapper tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.received-status {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  background: #dcfce7;
+
+  color: #15803d;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .received-container {
+    padding: 30px 20px;
+  }
+
+  .received-header h1 {
+    font-size: 28px;
+  }
+
+  .received-table-wrapper {
+    padding: 15px;
+  }
+
+}

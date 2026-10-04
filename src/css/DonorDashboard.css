@@ -1,0 +1,454 @@
+.dashboard-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 60px 60px;
+  background: linear-gradient(
+    135deg,
+    #d8f8e8,
+    #b9efd4,
+    #d8f8e8
+  );
+  font-family: Arial, sans-serif;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.dashboard-header {
+  width: 100%;
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #111827;
+  font-weight: 700;
+}
+
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+===================================================== */
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+
+  border: none;
+  padding: 10px 22px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  margin-left: 20px;
+}
+
+
+.logout-btn:hover {
+  background-color: #b02a37;
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats-container {
+  width: 100%;
+  margin: 0 0 30px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 28px 15px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+
+.stat-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+
+.stat-card p {
+  margin: 8px 0 0;
+  color: #555;
+  font-size: 16px;
+}
+
+
+/* =====================================================
+   COMMON SECTIONS
+===================================================== */
+
+.section-card,
+.recent-donations {
+  width: 100%;
+  margin: 0 0 25px;
+
+  background: white;
+  border-radius: 14px;
+  padding: 28px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.section-card h2,
+.recent-donations h2 {
+  margin: 0 0 22px;
+  text-align: center;
+
+  font-size: 24px;
+  color: #444;
+}
+
+
+/* =====================================================
+   QUICK ACTIONS
+===================================================== */
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+
+.action-card {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+  padding: 20px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  cursor: pointer;
+  text-align: left;
+
+  transition: 0.3s;
+}
+
+
+.action-card:hover {
+  background: #eef5ff;
+  border-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+
+.action-card > span {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8f0ff;
+  border-radius: 10px;
+
+  font-size: 25px;
+}
+
+
+.action-card h3 {
+  margin: 0 0 5px;
+
+  font-size: 18px;
+  color: #2563eb;
+}
+
+
+.action-card p {
+  margin: 0;
+
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* =====================================================
+   EXPIRY ALERT
+===================================================== */
+
+.expiry-alert {
+  width: 100%;
+  margin: 0 0 25px;
+
+  padding: 22px 25px;
+
+  background: #fff8e6;
+
+  border-left: 5px solid #f59e0b;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.alert-icon {
+  font-size: 28px;
+}
+
+
+.alert-content {
+  flex: 1;
+}
+
+
+.alert-content h3 {
+  margin: 0 0 5px;
+
+  color: #b45309;
+  font-size: 18px;
+}
+
+
+.alert-content p {
+  margin: 0;
+
+  color: #666;
+  font-size: 15px;
+}
+
+
+.expiry-alert button {
+  border: none;
+
+  background: #f59e0b;
+  color: white;
+
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+
+.expiry-alert button:hover {
+  background: #d97706;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+thead {
+  background: #2563eb;
+  color: white;
+}
+
+
+th,
+td {
+  padding: 17px 12px;
+
+  text-align: left;
+
+  font-size: 16px;
+}
+
+
+th {
+  font-weight: 600;
+}
+
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+td {
+  color: #6b7280;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.status {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.status.approved {
+  color: #16a34a;
+}
+
+
+.status.pending {
+  color: #f59e0b;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .dashboard-page {
+    padding: 30px 25px;
+  }
+
+
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .dashboard-page {
+    padding: 25px 15px;
+  }
+
+
+  /* Header */
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+  .header-text {
+    text-align: center;
+  }
+
+
+  .dashboard-header h1 {
+    font-size: 28px;
+  }
+
+
+  .dashboard-header p {
+    font-size: 16px;
+  }
+
+
+  .logout-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+
+  /* Stats */
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Quick Actions */
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Expiry Alert */
+
+  .expiry-alert {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+  .expiry-alert button {
+    width: 100%;
+  }
+
+}

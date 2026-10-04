@@ -1,0 +1,629 @@
+/* =====================================================
+   MAIN DASHBOARD
+===================================================== */
+
+.ngo-dashboard {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 40px 60px 60px;
+
+  background: linear-gradient(
+    135deg,
+    #d8f8e8,
+    #b9efd4,
+    #d8f8e8
+  );
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.ngo-header {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 32px;
+}
+
+
+.ngo-header > div {
+  flex: 1;
+}
+
+
+.ngo-header h1 {
+  margin: 0;
+
+  font-size: 36px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+
+.ngo-header p {
+  margin-top: 8px;
+
+  font-size: 18px;
+
+  color: #6b7280;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+===================================================== */
+
+.logout-btn {
+  margin-left: auto;
+
+  background-color: #dc3545;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 22px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  white-space: nowrap;
+}
+
+
+.logout-btn:hover {
+  background-color: #b02a37;
+
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.ngo-stats {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+
+  margin-bottom: 30px;
+}
+
+
+.ngo-stat-card {
+  background: white;
+
+  border-radius: 14px;
+
+  padding: 28px 20px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+
+.ngo-stat-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.ngo-stat-icon {
+  font-size: 30px;
+
+  margin-bottom: 8px;
+}
+
+
+.ngo-stat-card h2 {
+  margin: 0;
+
+  font-size: 32px;
+
+  color: #087f73;
+
+  font-weight: 700;
+}
+
+
+.ngo-stat-card p {
+  margin: 8px 0 0;
+
+  font-size: 16px;
+
+  color: #555;
+}
+
+
+/* =====================================================
+   COMMON SECTION
+===================================================== */
+
+.ngo-section {
+  width: 100%;
+
+  background: white;
+
+  border-radius: 14px;
+
+  padding: 28px;
+
+  margin-bottom: 25px;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+.ngo-section h2 {
+  margin: 0 0 22px;
+
+  text-align: center;
+
+  font-size: 24px;
+
+  color: #444;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.ngo-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+.ngo-table-wrapper table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+
+.ngo-table-wrapper thead {
+  background: #087f73;
+
+  color: white;
+}
+
+
+.ngo-table-wrapper th,
+.ngo-table-wrapper td {
+  padding: 16px 14px;
+
+  text-align: left;
+
+  font-size: 16px;
+}
+
+
+.ngo-table-wrapper th {
+  font-weight: 600;
+}
+
+
+.ngo-table-wrapper tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.ngo-table-wrapper tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+.ngo-table-wrapper td {
+  color: #6b7280;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.ngo-status {
+  font-weight: 600;
+
+  font-size: 15px;
+}
+
+
+.ngo-status.pending {
+  color: #f59e0b;
+}
+
+
+.ngo-status.approved {
+  color: #2563eb;
+}
+
+
+.ngo-status.received {
+  color: #16a34a;
+}
+
+
+/* =====================================================
+   QUICK ACTIONS
+===================================================== */
+
+.ngo-actions {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+
+.ngo-action-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 20px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition: 0.3s;
+}
+
+
+.ngo-action-card:hover {
+  background: #eefaf7;
+
+  border-color: #087f73;
+
+  transform: translateY(-2px);
+}
+
+
+.ngo-action-card > span {
+  width: 52px;
+
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #e5f7f3;
+
+  border-radius: 10px;
+
+  font-size: 26px;
+
+  flex-shrink: 0;
+}
+
+
+.ngo-action-card h3 {
+  margin: 0 0 5px;
+
+  font-size: 18px;
+
+  color: #087f73;
+}
+
+
+.ngo-action-card p {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #777;
+}
+
+
+/* =====================================================
+   INVENTORY ALERT
+===================================================== */
+
+.ngo-alert {
+  width: 100%;
+
+  margin-bottom: 25px;
+
+  padding: 22px 25px;
+
+  background: #fff8e6;
+
+  border-left: 5px solid #f59e0b;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.ngo-alert-icon {
+  font-size: 30px;
+}
+
+
+.ngo-alert-content {
+  flex: 1;
+}
+
+
+.ngo-alert-content h3 {
+  margin: 0 0 5px;
+
+  color: #b45309;
+
+  font-size: 18px;
+}
+
+
+.ngo-alert-content p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 15px;
+}
+
+
+.ngo-alert button {
+  border: none;
+
+  background: #f59e0b;
+
+  color: white;
+
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+
+.ngo-alert button:hover {
+  background: #d97706;
+}
+
+
+/* =====================================================
+   RECENT ACTIVITY
+===================================================== */
+
+.ngo-activity {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.activity-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 18px 5px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+
+.activity-icon {
+  width: 48px;
+
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #e5f7f3;
+
+  border-radius: 10px;
+
+  font-size: 24px;
+
+  flex-shrink: 0;
+}
+
+
+.activity-item div {
+  flex: 1;
+}
+
+
+.activity-item h3 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+
+  color: #333;
+}
+
+
+.activity-item p {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #777;
+}
+
+
+.activity-time {
+  font-size: 14px;
+
+  color: #999;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .ngo-dashboard {
+    padding: 30px 25px 50px;
+  }
+
+
+  .ngo-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .ngo-dashboard {
+    padding: 25px 15px 40px;
+  }
+
+
+  /* Header */
+
+  .ngo-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+
+  .ngo-header > div {
+    width: 100%;
+  }
+
+
+  .ngo-header h1 {
+    font-size: 30px;
+  }
+
+
+  .ngo-header p {
+    font-size: 15px;
+  }
+
+
+  /* Logout */
+
+  .logout-btn {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+
+  /* Stats */
+
+  .ngo-stats {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Quick Actions */
+
+  .ngo-actions {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Alert */
+
+  .ngo-alert {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .ngo-alert button {
+    width: 100%;
+  }
+
+
+  /* Activity */
+
+  .activity-item {
+    align-items: flex-start;
+  }
+
+
+  .activity-time {
+    display: none;
+  }
+
+}
